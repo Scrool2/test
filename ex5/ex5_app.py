@@ -1,8 +1,6 @@
 from fastapi import FastAPI, Cookie, HTTPException
-from pydantic import BaseModel
 from fastapi import Response
 
-# Предполагается, что у вас есть модель LoginUser в ex5.models.models
 from ex5.models.models import LoginUser
 
 app = FastAPI()
