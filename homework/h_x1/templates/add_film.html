@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Film</title>
+</head>
+<body>
+    <h1>Add Film</h1>
+    <form action="/add_film" method="post" enctype="multipart/form-data">
+        <div>
+            <input type="text" name="name" placeholder="Film name" required>
+        </div>
+        <div>
+            <input type="text" name="director" placeholder="Director" required>
+        </div>
+        <div>
+            <input type="number" name="cost" placeholder="Cost" required>
+        </div>
+        <div>
+            <label>Active: <input type="checkbox" name="is_active"></label>
+        </div>
+        <div>
+            <label>Description file: <input type="file" name="description"></label>
+        </div>
+        <div>
+            <label>Cover image: <input type="file" name="cover"></label>
+        </div>
+        <div>
+            <button type="submit">Add Film</button>
+        </div>
+    </form>
+</body>
+</html>
